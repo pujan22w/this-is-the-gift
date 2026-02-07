@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Video above buttons */
+.video-box {
+  width: 300px;
+  height:200px;
+  margin-bottom: 15px;
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+/* Begging text */
+.beg-text {
+  font-size: 20px;
+  margin-bottom: 15px;
+  animation: fadeIn 0.4s ease-in-out;
+  margin-top: 60px;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.yes {
+  background-color: #28a745;
+  color: white;
+}
+
+.no {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Final screen */
+.love-img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.love-text {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  animation: glow 1s infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px white; }
+  to { text-shadow: 0 0 25px yellow; }
+}
